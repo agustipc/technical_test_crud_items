@@ -1,5 +1,12 @@
 import type { Metadata } from 'next'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
+
+const montserrat = Montserrat({
+  weight: ['400'],
+  subsets: ['latin']
+
+})
 
 export const metadata: Metadata = {
   title: 'Technical Test CRUD - Next.js',
@@ -13,7 +20,7 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   )
 }
