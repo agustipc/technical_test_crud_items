@@ -22,12 +22,12 @@ export default function ItemList () {
             className='my-4 flex flex-row gap-4 items-center'
             onClick={() => { selectItem(index) }}
           >
-            <div className='w-full p-4 flex flex-col bg-[#f5f5f5] hover:bg-white text-gray-900 rounded-lg transition-transform duration-300 ease-in-out hover:scale-[1.01] cursor-pointer'>
+            <div className='max-w-md w-full p-4 flex flex-col bg-[#f5f5f5] hover:bg-white text-gray-900 rounded-lg transition-transform duration-300 ease-in-out hover:scale-[1.01] cursor-pointer'>
               <header className='flex flex-row justify-between items-center'>
-                <h1 className='text-lg'>{item.title}</h1>
+                <h1 className='text-lg w-full break-words'>{item.title}</h1>
                 <IoIosArrowForward size={24} className={`transition-transform duration-300 ${selectedItemIndex === index ? 'transform rotate-90' : ''}`} />
               </header>
-              {selectedItemIndex === index && <p className='text-gray-500 italic mt-2'>{item.description}</p>}
+              {selectedItemIndex === index && <p className='break-words text-gray-500 italic mt-2'>{item.description}</p>}
             </div>
             <button
               onClick={(e) => {

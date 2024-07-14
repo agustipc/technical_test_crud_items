@@ -62,6 +62,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - For the validation of errors, I decided to use "null" when no error is present and a string when there is an error for the clarity of the state making it easier to understand that no error is present when the value is null.
 
+- On the list item I decided to make it full clickable instead of only the button to make it more user-friendly.
+
 - Use of a context to manage the state of the items and the selected item. With that, I have an easy way to update and access the state of the items and the selected item.
 
 ## Things to improve
