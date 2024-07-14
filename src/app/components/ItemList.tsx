@@ -36,7 +36,7 @@ export default function ItemList () {
                 removeItem(index)
               }
               }
-              className="text-gray-900 hover:bg-red-700 transition-colors bg-red-500 p-4 rounded-full"
+              className="text-white hover:bg-red-700 hover:scale-110 transition-all ease-in-out duration-300 bg-red-500 p-4 rounded-full"
             >
               <FaTrash size={20} />
             </button>
