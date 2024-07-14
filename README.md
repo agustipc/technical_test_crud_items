@@ -1,3 +1,5 @@
+You can check the webpage on: [Deployed Site](https://technical-test-crud-items.vercel.app/)
+
 # React / NextJS Single page Application
 
 This is a [Next.js](https://nextjs.org/) project for a technical test with the following objective and requiremnts:

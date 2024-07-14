@@ -9,9 +9,11 @@ export default function ItemForm () {
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-lg p-4 bg-white rounded-lg" aria-labelledby="form-title" aria-describedby='form-instructions'>
       <h2 id="form-title" className="text-lg font-medium text-gray-900 mb-2">Add a New Item</h2>
-      <p id="form-instructions" className="text-xs text-gray-600 mb-8">
+      <p id="form-instructions" className="text-xs text-gray-600 mb-4">
         Please fill out the form below to add a new item. All fields are required.
       </p>
+      <hr className='mb-8'/>
+
       <fieldset>
         <legend className="sr-only">Item Details</legend>
         <div className='mb-6'>
