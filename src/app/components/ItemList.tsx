@@ -4,6 +4,7 @@ import { FaTrash } from 'react-icons/fa'
 import { IoIosArrowForward } from 'react-icons/io'
 
 export default function ItemList () {
+  // Use the custom hook to get the items list and the selected item index from the context
   const { items, selectedItemIndex, removeItem, selectItem } = useItems()
 
   return (
@@ -14,6 +15,7 @@ export default function ItemList () {
             <p className='text-center'>Not items yet</p>
           )
         }
+        {/* Map through the items list and render each item */}
         {items.map((item, index) => (
           <li
             key={index}
@@ -28,7 +30,12 @@ export default function ItemList () {
               {selectedItemIndex === index && <p className='text-gray-500 italic mt-2'>{item.description}</p>}
             </div>
             <button
-              onClick={() => { removeItem(index) }}
+              onClick={(e) => {
+                // Prevent the event to propagat to the parent element if not this would trigger the selectItem function
+                e.stopPropagation()
+                removeItem(index)
+              }
+              }
               className="text-gray-900 hover:bg-red-700 transition-colors bg-red-500 p-4 rounded-full"
             >
               <FaTrash size={20} />
