@@ -10,6 +10,15 @@ export interface ItemErrors {
   description: string | null
 }
 
+export interface ListItem {
+  item: Item
+  index: number
+  isSelected: boolean
+  onSelect: (index: number) => void
+  onRemove: (index: number) => void
+
+}
+
 export interface ItemsContextType {
   items: Item[]
   addItem: (newItem: Item) => void

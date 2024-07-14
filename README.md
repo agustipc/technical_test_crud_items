@@ -66,6 +66,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Use of a context to manage the state of the items and the selected item. With that, I have an easy way to update and access the state of the items and the selected item.
 
+- Add accessibility to the form by using: 
+  - `aria-label` to input fields to provide accessible descriptions
+  - `aria-labelledby` to link the form with the title of the form
+  - `aria-describedby` to link the error message with the input
+  - `role="alert"` to the error message to make it clear that it is an error message for the screen reader
+  - `htmlFor` to link the label with the input
+  - `aria-live="assertive"` to ensure error messages are announced immediately
+  -  Grouped related fields using `fieldset` and `legend` for better structure and accessibility
+  - Adding `role="list"` to the `<ul>` to ensure it is recognized as a list by screen readers.
+  - Adding `role="listitem"` to each `<li>` to ensure each item is recognized as a list item by screen readers.
+  - Adding `aria-expanded` to each `<li>` to indicate whether the item is expanded or collapsed.
+  - Adding `tabIndex={0}` and `onKeyPress` to each `<li>` to make list items navigable and selectable via the keyboard.
+ 
+
 ## Things to improve
 
 As there is no much time to work on this project, there are some things that could be improved:
