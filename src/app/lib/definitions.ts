@@ -1,3 +1,5 @@
+// typescript type definitions
+
 export interface Item {
   title: string
   description: string
