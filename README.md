@@ -54,6 +54,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 |     | Command          | Action                                        |
 | :-- | :--------------- | :-------------------------------------------- |
 | ⚙️  | `dev` or `start` | Starts local dev server at `localhost:3000`.  |
+| ⚙️  | `test`           | Run your tests.                               |
 | ⚙️  | `build`          | Build your production site to `./dist/`.      |
 | ⚙️  | `preview`        | Preview your build locally, before deploying. |
 
