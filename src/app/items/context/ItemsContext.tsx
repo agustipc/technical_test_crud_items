@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useState, useContext, useCallback } from 'react'
-import { type Item, type ItemsContextType } from '../lib/definitions'
+import { type Item, type ItemsContextType } from '../../lib/definitions'
 
 // Create a default value for the context
 const defaultValue: ItemsContextType = {

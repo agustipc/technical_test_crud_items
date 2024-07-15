@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { type Item, type ItemErrors } from '../lib/definitions'
-import { formValidation } from '../lib/utils'
+import { type Item, type ItemErrors } from '../../lib/definitions'
+import { formValidation } from '../../lib/utils'
 import { useItems } from '../context/ItemsContext'
 
 // Create a custom hook to handle the form state and validation

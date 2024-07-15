@@ -1,5 +1,5 @@
 import { IoIosArrowForward } from 'react-icons/io'
-import { type ListItem } from '../lib/definitions'
+import { type ListItem } from '../../lib/definitions'
 import { FaTrash } from 'react-icons/fa'
 
 export default function ItemCard ({ item, index, isSelected, onSelect, onRemove }: ListItem) {

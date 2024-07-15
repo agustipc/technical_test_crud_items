@@ -64,6 +64,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - For the validation of errors, I decided to use "null" when no error is present and a string when there is an error for the clarity of the state making it easier to understand that no error is present when the value is null.
 
+- Use of a Feature-based Modular Architecture, organizing the files and folders by their functionality (feature). This desition is just made for the structure to support the scalability and the easy addition of new features.
+
 - On the list item I decided to make it full clickable instead of only the button to make it more user-friendly.
 
 - Use of a context to manage the state of the items and the selected item. With that, I have an easy way to update and access the state of the items and the selected item.
@@ -91,3 +93,5 @@ As there is no much time to work on this project, there are some things that cou
 - Add a confirmation modal
 - Use of localStorage or a database to store the items
 - Internationalization
+
+
