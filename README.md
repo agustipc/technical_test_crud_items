@@ -92,6 +92,7 @@ As there is no much time to work on this project, there are some things that cou
 - Check if we want another type of input for the description
 - Review code to identify reusable patterns and extract them to components for example the form input.
 - Add a confirmation modal
+- Add more tests to cover all the components and functionalities
 - Use of localStorage or a database to store the items
 - Internationalization
 

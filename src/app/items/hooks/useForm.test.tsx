@@ -4,9 +4,11 @@ import useForm from './useForm'
 
 describe('useForm', () => {
   it('should handle form state and validation', () => {
+    // Define a wrapper to provide the context to the hook
     const wrapper = ({ children }: { children: React.ReactNode }) => <ItemsProvider>{children}</ItemsProvider>
     const { result } = renderHook(() => useForm(), { wrapper })
 
+    // Simulate a change event for the title input
     act(() => {
       const event = {
         target: { name: 'title', value: 'Test Title' },
@@ -20,6 +22,7 @@ describe('useForm', () => {
     expect(result.current.item.title).toBe('Test Title')
     expect(result.current.errors.title).toBeNull()
 
+    // Simulate the form submit event
     act(() => {
       const event = {
         preventDefault: () => {},
