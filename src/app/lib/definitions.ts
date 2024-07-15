@@ -16,7 +16,6 @@ export interface ListItem {
   isSelected: boolean
   onSelect: (index: number) => void
   onRemove: (index: number) => void
-
 }
 
 export interface ItemsContextType {
