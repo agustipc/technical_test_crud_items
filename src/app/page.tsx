@@ -1,6 +1,6 @@
-import ItemForm from './items/components/ItemForm'
-import ItemList from './items//components/ItemList'
+import ItemList from './items/components/ItemList/ItemList'
 import { ItemsProvider } from './items//context/ItemsContext'
+import ItemForm from './items/components/ItemForm/ItemForm'
 
 export default function Home () {
   return (

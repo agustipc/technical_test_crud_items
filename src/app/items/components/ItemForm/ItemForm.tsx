@@ -1,7 +1,7 @@
 'use client'
 
-import useForm from '../hooks/useForm'
-import AppButton from '../../common/components/AppButton'
+import AppButton from '@/app/common/components/AppButton'
+import useForm from '../../hooks/useForm'
 
 export default function ItemForm () {
   const { item, errors, handleChange, handleSubmit } = useForm()

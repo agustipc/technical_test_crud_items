@@ -1,6 +1,6 @@
 'use client'
-import { useItems } from '../context/ItemsContext'
-import ItemCard from './ItemCard'
+import { useItems } from '../../context/ItemsContext'
+import ItemCard from '../ItemCard/ItemCard'
 
 export default function ItemList () {
   // Use the custom hook to get the items list and the selected item index from the context
